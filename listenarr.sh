@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+COMMUNITYSCRIPTSURL="https://raw.githubusercontent.com/xlemmingx/proxmox-install-scripts/main"
 source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: community-scripts (based on tteck's work)
@@ -13,6 +14,7 @@ var_disk="${var_disk:-4}"
 var_os="${var_os:-debian}"
 var_version="${var_version:-12}"
 var_unprivileged="${var_unprivileged:-1}"
+var_install="${var_install:-listenarr-install}"
 
 header_info "$APP"
 variables
